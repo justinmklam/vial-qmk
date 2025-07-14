@@ -17,7 +17,7 @@
     },
     "split": {
         "enabled": true,
-        "main": "left",
+        "main": "right",
         "soft_serial_pin": "GP1",
         "transport": { "protocol": "serial" },
         "matrix_pins": {
