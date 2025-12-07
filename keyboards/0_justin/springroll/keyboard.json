@@ -1,5 +1,5 @@
 {
-    "manufacturer": "Justin Lam",
+    "manufacturer": "Lamstrong Keebs",
     "keyboard_name": "Spring Roll",
     "maintainer": "Justin Lam",
     "bootloader": "rp2040",
@@ -9,7 +9,9 @@
         "bootmagic": false,
         "extrakey": false,
         "mousekey": true,
-        "nkro": false
+        "nkro": false,
+        "oled": true,
+        "wpm": true
     },
     "matrix_pins": {
         "cols": ["GP3", "GP4", "GP5", "GP6", "GP7", "GP8", "GP9", "GP10", "GP11", "GP12"],
