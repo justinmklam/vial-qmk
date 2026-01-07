@@ -18,9 +18,36 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,
-        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
-        KC_LCTL,          KC_BSPC, KC_SPC,  KC_DEL,  KC_ENT,  KC_RALT, KC_LGUI,           KC_RCTL
+        LSFT_T(KC_Z),    LALT_T(KC_X),    LCTL_T(KC_C),    LGUI_T(KC_V),    KC_B,    KC_N,    RGUI_T(KC_M),    RCTL_T(KC_COMM), RALT_T(KC_DOT),  RSFT_T(KC_SLSH),
+        KC_LCTL,          KC_BSPC, MO(1),  LGUI_T(KC_TAB),  RCTL_T(KC_BSPC),  LT(2, KC_SPACE), LT(3, KC_ENTER),           KC_RCTL
+    ),
+
+    [1] = LAYOUT(
+        KC_EXCLAIM,    KC_AMPERSAND,    KC_ASTERISK	,    KC_GRAVE,    KC_TILDE,    KC_1,    KC_2,    KC_3,    KC_PLUS,    _______,
+        KC_UNDERSCORE,    KC_HASH,    KC_DQUO,    KC_MINUS,    KC_EQUAL,    KC_4,    KC_5,    KC_6,    KC_MINUS,    KC_COLN,
+        _______,    KC_DOLLAR,    KC_PERCENT,    KC_CIRC,    KC_AMPERSAND,    KC_1,    KC_2,    KC_3, KC_PIPE,  KC_BACKSLASH,
+        _______,          _______, _______,  _______, _______,  KC_0, KC_DOT,           _______
+    ),
+
+    [2] = LAYOUT(
+        _______, _______, _______, _______, _______, LSG(KC_4), RCS(KC_TAB), LGUI(KC_LEFT), LGUI(KC_RIGHT), LCTL(KC_TAB),
+        QK_CAPS_WORD_TOGGLE, MS_WHLL, MS_WHLD, MS_WHLU, MS_WHLR, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, LGUI(KC_C),
+        _______, _______, _______, MS_BTN2, MS_BTN1, LGUI(KC_V), MS_LEFT, MS_DOWN, MS_UP, MS_RGHT,
+        _______,          _______, _______, _______, _______, _______, _______,           _______
+    ),
+
+    [3] = LAYOUT(
+        KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5, _______, _______, _______, _______, _______,
+        KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9, KC_MPLY, KC_VOLU, KC_VOLD, KC_MUTE, _______,
+        KC_F10,  KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______, _______,
+        _______,          _______, _______, _______, _______, _______, _______,           _______
     )
+    // [x] = LAYOUT(
+    //     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+    //     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+    //     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+    //     _______,          _______, _______, _______, _______, _______, _______,           _______
+    // )
 };
 
 #ifdef OLED_ENABLE
