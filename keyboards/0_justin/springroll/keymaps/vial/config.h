@@ -6,4 +6,9 @@
 
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 2 }
 #define VIAL_UNLOCK_COMBO_COLS { 0, 4 }
-// 
+
+#define TAPPING_TERM 250
+#define PERMISSIVE_HOLD
+// #define FLOW_TAP_TERM 150
+// #define CHORDAL_HOLD
+#define SPECULATIVE_HOLD
